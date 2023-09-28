@@ -1,0 +1,243 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+    --waterBack:#51a8ffb2;
+    --grassBack:#1cbe8593;
+    --fireBack:#ff5f439d;
+    --bugBack:#a4b31c73;
+    --normalBack:#a8a87891;
+    --rockBack:#b8a13885;
+    --steelBack:#b8b8d088;
+    --iceBack:#98d8d896;
+    --electricBack:#f1d04ac9;
+    --fightingBack:#c03028ab;
+    --poisonBack:#b76ea8c5;
+    --groundBack:#e0c068b4;
+    --flyingBack:#9aa7ff7e;
+    --psychicBack:#f858889f;
+    --ghostBack:#715898a9;
+    --dragonBack:#7238f867;
+    --darkBack:#7058489c;
+    --fairyBack:#f0b6bcad;
+
+    --grassType:#80ceb3;
+    --waterType:#8bc2f8;
+    --fireType: #ff907d;
+    --poisonType:#B76EA8;
+    --flyingType:#9AA8FF;
+    --bugType:#A8B820;
+    --normalType:#A8A878;
+    --rockType:#B8A038;
+    --steelType:#B8B8D0;
+    --iceType:#98D8D8;
+    --electricType:#F8D030;
+    --fightingType:#C03028;
+    --groundType:#E0C068;
+    --psychicType:#F85888;
+    --ghostType:#705898;
+    --dragonType:#7038F8;
+    --darkType:#705848;
+    --fairyType:#F0B6BC;
+
+    
+}
+
+body{
+    background: url(../img/Fantastic-Pokemon-Wallpaper-Background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    align-items: center;
+}
+.content h1{
+    margin: 0;
+}
+.pokemons{
+    display: grid;
+    grid-template-columns: 1fr ;
+    max-width: 80%;
+    
+    padding: 0;
+    margin: 0;
+}
+.pokemon{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: .5rem;
+    padding: 2rem 1rem; 
+    border-radius: 1rem;
+    color: rgba(255, 255, 255, 0.89);
+    border: 1px solid rgba(128, 128, 128, 0.411);
+}
+.name{
+    text-transform: capitalize;
+}
+.number{
+    color: rgba(255, 255, 255, 0.575);
+    text-align: right;
+    font-size: .7rem;
+    margin-left: .3rem;
+}
+
+.pokemon div img{
+    margin: .7rem 0;
+    max-width: 100%;
+    height: 3rem;
+}
+.pokemon .types{
+    padding: 0;
+    margin: 0;
+}
+.other{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.type{
+    list-style-type: none;
+    border-radius: 2rem;
+    text-align: center;
+    margin: .3rem 0;
+    width: 4.5rem;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+.pagination button{
+    width: 8rem;
+    border-radius: 50px;
+    background: var(--dragonBack);
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+/*Types background color*/
+ol.types .grass{
+    background-color: var(--grassType);
+}
+ol.types .fire{
+    background-color: var(--fireType);
+}
+ol.types .water{
+    background-color: var(--waterType);
+}
+ol.types .poison{
+    background-color: var(--poisonType);
+}
+ol.types .flying{
+    background-color: var(--flyingType);
+}
+ol.types .normal{
+    background-color: var(--normalType);
+}
+ol.types .electric{
+    background-color: var(--electricType);
+}
+ol.types .ice{
+    background-color: var(--iceType);
+}
+ol.types .fighting{
+    background-color: var(--fightingType);
+}
+ol.types .ground{
+    background-color: var(--groundType);
+}
+ol.types .psychic{
+    background-color: var(--psychicType);
+}
+ol.types .bug{
+    background-color: var(--bugType);
+}
+ol.types .rock{
+    background-color: var(--rockType);
+}
+ol.types .ghost{
+    background-color: var(--ghostType);
+}
+ol.types .dragon{
+    background-color: var(--dragonType);
+}
+ol.types .dark{
+    background-color: var(--darkType);
+}
+ol.types .steel{
+    background-color: var(--steelType);
+}
+ol.types .fairy{
+    background-color: var(--fairyType);
+}
+
+/*Background Card*/
+
+ol.pokemons .poison{
+    background-color: var(--poisonBack);
+}
+ol.pokemons .grass{
+    background-color: var(--grassBack);
+}
+ol.pokemons .flying{
+    background-color: var(--flyingBack);
+}
+ol.pokemons .fire{
+    background-color: var(--fireBack);
+}   
+ol.pokemons .water{
+    background-color: var(--waterBack);
+}
+ol.pokemons .bug{
+    background-color: var(--bugBack);
+}
+ol.pokemons .normal{
+    background-color: var(--normalBack);
+}
+ol.pokemons .rock{
+    background-color: var(--rockBack);
+}
+ol.pokemons .steel{
+    background-color: var(--steelBack);
+}
+ol.pokemons .ice{
+    background-color: var(--iceBack);
+}
+ol.pokemons .electric{
+    background-color: var(--electricBack);
+}
+ol.pokemons .fighting{
+    background-color: var(--fightingBack);
+}
+ol.pokemons .ground{
+    background-color: var(--groundBack);
+}
+ol.pokemons .psychic{
+    background-color: var(--psychicBack);
+}
+ol.pokemons .ghost{
+    background-color: var(--ghostBack);
+}
+ol.pokemons .dragon{
+    background-color: var(--dragonBack);
+}
+ol.pokemons .dark{
+    background-color: var(--darkBack);
+}
+ol.pokemons .fairy{
+    background-color: var(--fairyBack);
+}

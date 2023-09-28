@@ -1,0 +1,25 @@
+@media screen and (min-width: 700px) {
+    .content{
+        margin: 0 auto;
+    }
+    .pokemons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 992px) {
+
+    .content{
+        margin: 0 auto;
+    }
+    .pokemons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+}
